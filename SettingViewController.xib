@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingViewController">
+            <connections>
+                <outlet property="tipDefaultControl" destination="kL2-9E-Jyy" id="SRl-oZ-Gdx"/>
+                <outlet property="tipField1" destination="Flp-nA-OGe" id="As7-wf-eCU"/>
+                <outlet property="tipField2" destination="4ch-xI-JaA" id="tVR-Jw-RXa"/>
+                <outlet property="tipField3" destination="QmX-Vi-c44" id="lxy-g2-ndg"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhH-yL-y7c">
+                    <rect key="frame" x="20" y="42" width="0.0" height="0.0"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip Amount #1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRP-nS-LCh">
+                    <rect key="frame" x="20" y="42" width="154" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="10" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Flp-nA-OGe">
+                    <rect key="frame" x="184" y="42" width="116" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <connections>
+                        <action selector="onTipChange:" destination="-1" eventType="editingDidEnd" id="8xy-Y6-3u5"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip Amount #2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCw-AK-PIo">
+                    <rect key="frame" x="20" y="90" width="154" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="15" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ch-xI-JaA">
+                    <rect key="frame" x="184" y="90" width="116" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <connections>
+                        <action selector="onTipChange:" destination="-1" eventType="editingDidEnd" id="tG5-Wg-1j0"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip Amount #3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4b-cL-3GE">
+                    <rect key="frame" x="20" y="138" width="154" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="20" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QmX-Vi-c44">
+                    <rect key="frame" x="184" y="138" width="116" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <connections>
+                        <action selector="onTipChange:" destination="-1" eventType="editingDidEnd" id="laS-fm-O4O"/>
+                    </connections>
+                </textField>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kL2-9E-Jyy">
+                    <rect key="frame" x="20" y="237" width="280" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="10%"/>
+                        <segment title="15%"/>
+                        <segment title="20%"/>
+                    </segments>
+                    <connections>
+                        <action selector="onControlTap:" destination="-1" eventType="valueChanged" id="eU9-AT-O5h"/>
+                    </connections>
+                </segmentedControl>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Default Tip Amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Rm-aO-Toa">
+                    <rect key="frame" x="20" y="194" width="280" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="nq6-jf-isy" appends="YES" id="xN5-3e-jNa"/>
+            </connections>
+        </view>
+        <tapGestureRecognizer id="nq6-jf-isy">
+            <connections>
+                <action selector="onTap:" destination="-1" id="U4N-HJ-Bon"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>
