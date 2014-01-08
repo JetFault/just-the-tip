@@ -78,8 +78,6 @@
     int tipAmount = [defaults integerForKey:[NSString stringWithFormat:@"TipAmount%d", index]];
     textField.text = [NSString stringWithFormat:@"%d", tipAmount];
     
-    NSLog([NSString stringWithFormat:@"Tip: %d", tipAmount]);
-    
 }
 
 - (void)updateTipControl {
